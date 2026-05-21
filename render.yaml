@@ -18,7 +18,6 @@ services:
     env: static
     buildCommand: cd dashboard/frontend && npm install && npm run build
     staticPublishPath: dashboard/frontend/dist
-    plan: free
     envVars:
       - key: VITE_API_HOST
         fromService:
