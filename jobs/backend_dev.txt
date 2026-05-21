@@ -1,0 +1,27 @@
+Backend Developer Job DescriptionAbout The Company
+
+MEAtec - Battery Intelligence is at the forefront of developing advanced digital solutions for the battery industry. Our focus lies in creating innovative platforms such as Battery Passport and Battery Analytics, which enhance transparency, traceability, and performance throughout the battery lifecycle. As a rapidly expanding organization, we bring together a diverse team of engineers, designers, and industry experts who are passionate about sustainability and clean energy. Our goal is to shape the future of digital energy solutions, enabling our clients to achieve greater efficiency and environmental responsibility.
+
+About The Role
+
+We are seeking a talented Backend Developer to join our dynamic team. In this role, you will be instrumental in designing, developing, and maintaining backend services and APIs that power our web applications and software solutions. You will primarily utilize Node.js for server-side development and leverage AWS cloud services for infrastructure management and deployment. The ideal candidate will have a strong foundation in building scalable, secure, and maintainable backend systems, working closely with frontend developers, DevOps professionals, and product managers to deliver high-quality solutions. This position offers an exciting opportunity to contribute to impactful projects in the clean energy sector, supporting our mission to innovate within the battery industry.
+
+Qualifications
+
+Candidates should possess a Bachelor’s degree in Computer Science, Software Engineering, or a related discipline, preferably from Tier 1 or Tier 2 universities. Up to one year of practical experience in backend development using Node.js in production environments is required, with familiarity in microservices architecture. A strong understanding of server-side technologies such as Express.js or Nest.js is essential. Experience working with databases like DynamoDB, PostgreSQL, or MongoDB, along with infrastructure tools such as RabbitMQ, Kafka, SQS, Redis, and ElasticSearch, is highly desirable. Proficiency in containerization with Docker and orchestration with Kubernetes is necessary. Knowledge of writing unit and integration tests using frameworks like Jest is required. Familiarity with CI/CD pipelines and AWS cloud services including S3, Cognito, API Gateway, and ElasticSearch will be advantageous. The ideal candidate will demonstrate excellent problem-solving skills, attention to detail, and effective communication abilities. Experience in front-end development with React, Redux, or React Router is a plus but not mandatory.
+
+Responsibilities
+
+The successful candidate will be responsible for contributing to the development of new features and enhancing existing functionalities for our web platform and backend systems, ensuring optimal performance and responsiveness. They will architect and implement robust backend services, APIs, and server-side logic, adhering to best practices in software development. Collaborating with cross-functional teams—including UX/UI designers and product managers—is crucial to deliver seamless user experiences. Conducting thorough code reviews to maintain code quality and troubleshooting complex issues to optimize application performance are key aspects of the role. Staying current with emerging technologies and industry trends will help in continuously improving our tech stack. The role also involves designing, implementing, and maintaining CI/CD pipelines to automate deployment and testing processes, ensuring smooth and reliable releases. Managing and optimizing AWS cloud infrastructure for scalability, security, and high availability is vital. Additionally, mentoring junior developers and providing guidance to support their professional growth will be part of your responsibilities.
+
+Benefits
+
+MEAtec offers a stimulating work environment where you will gain hands-on experience working on impactful and innovative projects within a collaborative and fast-paced setting. We provide a competitive salary package along with comprehensive benefits to support your well-being and professional growth. Our supportive team culture fosters an international work environment that values diversity and inclusion. We also prioritize professional development by offering mentorship and training opportunities to help you advance your skills and career. Joining our team means being part of a forward-thinking organization committed to making a tangible difference in the clean energy industry.
+
+Equal Opportunity
+
+MEAtec - Battery Intelligence is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees. We do not discriminate based on race, ethnicity, gender, age, sexual orientation, disability, or any other protected characteristic. We believe that a diverse workforce enhances our ability to innovate and serve our clients effectively. All qualified applicants will receive consideration for employment without regard to any protected status.
+
+
+Desired Skills and Experience
+Backend Development, API Development, Cloud Computing, Microservices, Containerization, Databases

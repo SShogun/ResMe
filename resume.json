@@ -1,0 +1,118 @@
+{
+    "meta": {
+        "name": "Soham Shirke",
+        "email": "sohamincollege@gmail.com",
+        "phone": "",
+        "github": "github.com/SShogun",
+        "linkedin": "linkedin.com/in/sshogunshirke"
+    },
+    "profile_summary": "Results-driven Computer Engineering student (CGPA: 8.72) with hands-on execution across backend systems, startup operations, and team leadership. Co-Founded a supply-chain startup incubated at CIBA Vashi (Rs.50K+ revenue); Vice President at Toastmasters, coaching 50+ students over 1.5 years in structured communication. National Hackathon Winner (1st/70+ teams, 12 states, Rs.50,000 prize) building a privacy-preserving cross-bank fraud detection system. Focused on Go-based backend development, concurrent systems, and practical system design.",
+    "experience": [
+        {
+            "title": "Vice President Public Relations & Former Treasurer",
+            "company": "Toastmasters International",
+            "location": "Pune",
+            "dates": "Jul 2025 – Present",
+            "bullets": [
+                "Coached 50+ students over 1.5 years through 1-on-1 sessions, workshops, and structured feedback rounds, helping members overcome stage fear and build technical communication skills",
+                "Edited and published 5 issues of ToastTimes magazine, distributed to all HODs and campus directors, and officially submitted to GHRCEM Nagpur for institutional recognition",
+                "Managed club finances and led PR initiatives, sustaining member engagement across a growing chapter"
+            ]
+        },
+        {
+            "title": "Co-Founding Chief Operating Officer",
+            "company": "Purecuts | CIBA Vashi Incubatee",
+            "location": "Pune",
+            "dates": "Sept 2024 – Feb 2025",
+            "bullets": [
+                "Designed and operated a 3-person supply chain from Pune to Nanded, sourcing barbershop materials at 15% lower cost than local vendors and delivering to 5+ high-volume B2B customers",
+                "Drove Rs.50,000+ in early revenue by replacing unreliable local supply with a consistent, margin-efficient distribution model across a tier-3 city market"
+            ]
+        }
+    ],
+    "education": {
+        "degree": "B.Tech in Computer Engineering",
+        "institute": "G H Raisoni College of Engineering and Management, Pune",
+        "metrics": "CGPA: 8.72",
+        "dates": "2023 – Expected 2027"
+    },
+    "technical_skills": {
+        "languages": [
+            "Go",
+            "Python"
+        ],
+        "concurrency": [
+            "Goroutines",
+            "Channels",
+            "Worker Pools",
+            "Pipeline Architecture"
+        ],
+        "backend": [
+            "REST APIs",
+            "PostgreSQL",
+            "Session Management",
+            "Audit Logging"
+        ],
+        "redis": [
+            "RedisJSON",
+            "RedisBloom",
+            "RediSearch",
+            "Streams",
+            "Pub/Sub",
+            "Sentinel"
+        ],
+        "security": [
+            "HMAC-based Linkage",
+            "Differential Privacy",
+            "Bloom Filter"
+        ],
+        "tools": [
+            "Git",
+            "Cobra",
+            "Viper",
+            "Cluster",
+            "Ollama"
+        ]
+    },
+    "projects": [
+        {
+            "title": "SATARK",
+            "tech": "Python, FastAPI, React",
+            "impact": "National Hackathon Winner – 1st place / 70+ teams / 12 states, ₹50,000 prize (Mar 2026)",
+            "bullets": [
+                "Engineered a privacy-preserving fraud detection system using HMAC-based linkage and graph-based anomaly detection across 5,000+ mock RBI-structured transactions",
+                "Achieved 80% detection accuracy on mock data; architecture projects 95%+ on live datasets by surfacing multi-hop laundering patterns (cycles, smurfing, velocity anomalies) without exposing raw customer data"
+            ]
+        },
+        {
+            "title": "ControlPlane",
+            "tech": "Go, PostgreSQL",
+            "bullets": [
+                "Built a server-rendered Go application for internal runbooks and incident documentation, exposing 20+ REST endpoints backed by a 9-table PostgreSQL schema",
+                "Implemented session management, multi-step approval workflows, and tamper-evident audit history to support structured team knowledge operations"
+            ]
+        },
+        {
+            "title": "RedisForge",
+            "tech": "Go, Redis",
+            "bullets": [
+                "Implemented production-grade patterns across 8 Redis modules – RedisJSON, RedisBloom, RediSearch, Streams, Pub/Sub, Sentinel, Cluster, and latency profiling",
+                "Sustained 265 ops/sec with zero failures across 752 benchmarked operations; enforced idempotency via Bloom filter pre-checks with no false negatives"
+            ]
+        },
+        {
+            "title": "ConcurFlow",
+            "tech": "Go, Concurrency",
+            "bullets": [
+                "Designed a bounded-concurrency URL processor with a 5-goroutine worker pool, early invalid-input filtering, structured logging, and context-aware graceful cancellation",
+                "Front-loaded validation before I/O to eliminate wasted goroutine cycles, preventing resource allocation on malformed inputs before network operations begin"
+            ]
+        }
+    ],
+    "awards": [
+        {
+            "title": "National Hackathon Winner – SATARK (Mar 2026)",
+            "details": "1st place out of 70+ teams across 12 states. Awarded ₹50,000 for building a privacy-preserving cross-bank fraud detection system – 80% accuracy on RBI-structured mock data, projecting 95%+ on live datasets."
+        }
+    ]
+}
