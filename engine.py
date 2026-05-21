@@ -269,7 +269,9 @@ def run_tailoring_with_backoff(client, job_desc: str, resume_data: dict, file_na
 
 def load_env():
     """Reads .env file manually and updates os.environ."""
-    env_path = ".env"
+    # Find .env relative to the location of engine.py
+    engine_dir = os.path.dirname(os.path.abspath(__file__))
+    env_path = os.path.join(engine_dir, ".env")
     if os.path.exists(env_path):
         with open(env_path, "r", encoding="utf-8") as f:
             for line in f:
@@ -333,7 +335,14 @@ def process_all_jobs(jobs_dir="jobs", resume_json_path="resume.json", output_dir
                             if idx < len(orig_proj["bullets"]):
                                 # Normalize bullets to remove LLM-introduced newlines and whitespace gaps
                                 cleaned_bullet = " ".join(t_bullet["tailored_bullet_text"].split())
+                                old_bullet = orig_proj["bullets"][idx]
                                 orig_proj["bullets"][idx] = cleaned_bullet
+                                
+                                # Log changes so the user can easily see what was tailored
+                                if old_bullet.strip() != cleaned_bullet.strip():
+                                    print(f"     ✍️  Tailored project '{orig_proj['title']}' bullet:")
+                                    print(f"       - Old: {old_bullet}")
+                                    print(f"       + New: {cleaned_bullet}")
 
             # Step 3: Populate LaTeX template
             latex_content = generate_latex_resume(resume_data)
@@ -352,7 +361,11 @@ def process_all_jobs(jobs_dir="jobs", resume_json_path="resume.json", output_dir
 
 
 if __name__ == "__main__":
-    # Ensure GEMINI_API_KEY environment variable is configured prior to run execution
-    start_pipeline = time.time()
-    process_all_jobs()
-    print(f"🏁 Complete pipeline finalized in {round((time.time() - start_pipeline)/60, 2)} minutes.")
+    try:
+        # Ensure GEMINI_API_KEY environment variable is configured prior to run execution
+        start_pipeline = time.time()
+        process_all_jobs()
+        print(f"🏁 Complete pipeline finalized in {round((time.time() - start_pipeline)/60, 2)} minutes.")
+    except KeyboardInterrupt:
+        print("\n🛑 Pipeline interrupted by user. Gracefully shutting down...")
+        sys.exit(0)

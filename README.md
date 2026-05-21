@@ -60,6 +60,31 @@ To generate the final PDF, you have two options:
 
 ---
 
+## 🌐 Running the Web Dashboard
+
+ResMe now includes a sleek web dashboard to track your job applications, visually review the AI's changes in a side-by-side diff, and tailor resumes on the fly.
+
+You will need **two separate terminal windows** to run the dashboard.
+
+### 1. Start the Backend (FastAPI)
+Open your first terminal and run:
+```powershell
+cd dashboard\backend
+..\..\venv\Scripts\activate
+python -m uvicorn main:app --host 127.0.0.1 --port 8000 --reload
+```
+
+### 2. Start the Frontend (React + Vite)
+Open your second terminal and run:
+```powershell
+cd dashboard\frontend
+npm run dev
+```
+
+Once both are running, open your web browser and go to **`http://localhost:5173/`**.
+
+---
+
 ## 📁 Directory Structure
 * `engine.py`: The core automation pipeline.
 * `resume.json`: Your master profile data.
