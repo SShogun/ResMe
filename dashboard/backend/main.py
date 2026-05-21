@@ -6,9 +6,11 @@ import os
 import json
 import logging
 
-# Ensure root workspace directory is in the path to import engine.py
-ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+# Ensure root workspace directory and local backend directory are in the path
+BACKEND_DIR = os.path.dirname(os.path.abspath(__file__))
+ROOT_DIR = os.path.abspath(os.path.join(BACKEND_DIR, "..", ".."))
 sys.path.append(ROOT_DIR)
+sys.path.append(BACKEND_DIR)
 
 import engine
 import database
