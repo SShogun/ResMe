@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { 
-  LayoutDashboard, Sparkles, FileJson, Calendar, ArrowRight, Plus, 
-  Trash2, Copy, Check, FileText, CheckCircle2, AlertCircle, Save, Loader2, ListTodo
+  LayoutDashboard, Sparkles, FileJson, Calendar, Plus, 
+  Trash2, Copy, Check, FileText, AlertCircle, Save, Loader2, ListTodo
 } from 'lucide-react'
 
 const getApiBase = () => {
