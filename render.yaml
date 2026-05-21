@@ -13,9 +13,8 @@ services:
         sync: false
 
   # Static Frontend (React/Vite)
-  - type: web
+  - type: static
     name: resme-frontend
-    env: static
     buildCommand: cd dashboard/frontend && npm install && npm run build
     publishPath: dashboard/frontend/dist
     plan: free
