@@ -4,7 +4,17 @@ import {
   Trash2, Copy, Check, FileText, CheckCircle2, AlertCircle, Save, Loader2, ListTodo
 } from 'lucide-react'
 
-const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:8000/api"
+const getApiBase = () => {
+  const host = import.meta.env.VITE_API_HOST
+  if (host) {
+    if (host.startsWith('http://') || host.startsWith('https://')) {
+      return host.endsWith('/api') ? host : `${host}/api`
+    }
+    return `https://${host}/api`
+  }
+  return import.meta.env.VITE_API_BASE || "http://localhost:8000/api"
+}
+const API_BASE = getApiBase()
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<'dashboard' | 'tailor' | 'resume'>('dashboard')
